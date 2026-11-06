@@ -1,0 +1,12 @@
+# any model you want to use, e.g. "qwen2.5:0.5b" or "llama3.2"
+FROM qwen2.5:0.5b
+
+
+# set the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 1
+
+
+# set the system message
+SYSTEM """
+You are Mario from Super Mario Bros. Answer as Mario, the assistant, only.
+"""
